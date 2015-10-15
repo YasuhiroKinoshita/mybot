@@ -1,0 +1,88 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (4.2.4)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    addressable (2.3.8)
+    chrono (0.1.0)
+      activesupport
+    dotenv (2.0.2)
+    eventmachine (1.0.8)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    faraday_middleware (0.10.0)
+      faraday (>= 0.7.4, < 0.10)
+    faye-websocket (0.9.2)
+      eventmachine (>= 0.12.0)
+      websocket-driver (>= 0.5.1)
+    fiddler-rb (0.1.2)
+    goraku (0.1.0)
+      sawyer (~> 0.6)
+    i18n (0.7.0)
+    json (1.8.3)
+    leveldb (0.1.9)
+      fiddler-rb (~> 0.1.1)
+    mem (0.1.5)
+    minitest (5.8.1)
+    multi_json (1.11.2)
+    multipart-post (2.0.0)
+    ruboty (1.2.2)
+      activesupport
+      bundler
+      dotenv
+      mem
+      slop
+    ruboty-alias (0.0.8)
+      ruboty (>= 1.1.1)
+    ruboty-chinachu (0.1.0)
+      goraku (~> 0.0)
+      ruboty (~> 1.2)
+    ruboty-cron (1.0.2)
+      activesupport
+      chrono
+      ruboty (>= 0.2.0)
+    ruboty-echo (0.1.0)
+      ruboty
+    ruboty-leveldb (0.0.3)
+      leveldb
+      ruboty
+    ruboty-slack_rtm (1.5.0)
+      ruboty (>= 1.1.4)
+      slack-api (~> 1.0.0)
+      slack-rtmapi (~> 1.0.0.rc4)
+    sawyer (0.6.0)
+      addressable (~> 2.3.5)
+      faraday (~> 0.8, < 0.10)
+    slack-api (1.0.0)
+      faraday (>= 0.7, <= 0.9)
+      faraday_middleware (~> 0.8)
+      faye-websocket (~> 0.9.2)
+      multi_json (~> 1.0, >= 1.0.3)
+    slack-rtmapi (1.0.0.rc4)
+      websocket-driver
+    slop (4.2.0)
+    thread_safe (0.3.5)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+    websocket-driver (0.6.2)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ruboty (~> 1.2)
+  ruboty-alias (~> 0.0)
+  ruboty-chinachu (~> 0.0)
+  ruboty-cron (~> 1.0.0)
+  ruboty-echo (~> 0.0)
+  ruboty-leveldb (~> 0.0)
+  ruboty-slack_rtm (~> 1.4)
+
+BUNDLED WITH
+   1.10.4
